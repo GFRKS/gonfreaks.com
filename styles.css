@@ -1,9 +1,7 @@
 /* Add custom font */
 @font-face {
     font-family: 'Trashhand';
-    src: url('fonts/Trashhand.woff2') format('woff2'), /* Adjust the file path as needed */
-         url('fonts/Trashhand.woff') format('woff'),
-         url('fonts/Trashhand.ttf') format('truetype');
+    src: url('fonts/Trashhand.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
