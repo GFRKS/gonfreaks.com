@@ -1,0 +1,55 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Container for the whole page */
+.container {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Album cover */
+.album-cover img {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Album information */
+.album-info h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.album-info p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.album-info a {
+    color: #0077b5;
+    text-decoration: none;
+}
+
+.album-info a:hover {
+    text-decoration: underline;
+}
