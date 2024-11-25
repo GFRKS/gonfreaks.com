@@ -1,3 +1,13 @@
+/* Add custom font */
+@font-face {
+    font-family: 'Trashhand';
+    src: url('fonts/Trashhand.woff2') format('woff2'), /* Adjust the file path as needed */
+         url('fonts/Trashhand.woff') format('woff'),
+         url('fonts/Trashhand.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Basic reset */
 * {
     margin: 0;
@@ -8,8 +18,8 @@
 /* Body and background */
 body {
     font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
+    background-color: black; /* Black background */
+    color: white; /* White text */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,23 +27,31 @@ body {
     text-align: center;
 }
 
+/* Container for the whole page */
+.container {
+    max-width: 600px;
+    padding: 20px; /* Retained padding for content spacing */
+}
+
 /* Album cover */
 .album-cover img {
     width: 100%;
     max-width: 400px;
     margin-bottom: 20px;
-    border-radius: 0px;
+    border-radius: 0; /* Removed rounded corners */
 }
 
 /* Album information */
 .album-info h1 {
-    font-size: 2rem;
+    font-size: 3rem;
+    font-family: 'Trashhand', Arial, sans-serif; /* Use Trashhand for the album title */
     margin-bottom: 10px;
 }
 
 .album-info p {
     font-size: 1rem;
     line-height: 1.5;
+    font-family: Arial, sans-serif; /* Use a simpler font for other text */
 }
 
 .album-info a {
