@@ -8,8 +8,8 @@
 /* Body and background */
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff;
-    color: #333;
+    background-color: black;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +31,7 @@ body {
     width: 100%;
     max-width: 400px;
     margin-bottom: 20px;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 
 /* Album information */
