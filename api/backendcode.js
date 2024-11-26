@@ -1,6 +1,16 @@
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 module.exports = async (req, res) => {
+  // Set CORS headers
+  res.setHeader('Access-Control-Allow-Origin', 'https://gonfreaks.com'); // Allow your domain, or use '*' for all
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  
+  if (req.method === 'OPTIONS') {
+    // Handle preflight request
+    return res.status(200).end();
+  }
+
   if (req.method === 'POST') {
     try {
       const session = await stripe.checkout.sessions.create({
