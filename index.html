@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://js.stripe.com/v3/"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Album Release - My Latest Album">
@@ -22,6 +21,13 @@
             <p>coming December 2nd</p>
         </div>
     </div>
+ <title>Stripe Payment</title>
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <button id="checkout-button">Pay $10</button>
 
+    <!-- Link to your JavaScript file -->
+    <script src="stripe.js"></script>
 </body>
 </html>
