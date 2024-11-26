@@ -6,6 +6,7 @@
          url('fonts/Trashhand.ttf') format('truetype'); /* Fallback to TTF */
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 
