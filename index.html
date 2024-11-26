@@ -6,26 +6,25 @@
     <meta name="description" content="Album Release - My Latest Album">
     <title>FREAK!</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://js.stripe.com/v3/"></script>
 </head>
 <body>
 
     <div class="container">
         <!-- Album Artwork -->
         <div class="album-cover">
-            <img src="Freak!.jpg" alt="My Latest Album Cover">
+            <img src="Freak!.jpg" alt="Album cover for FREAK!, releasing December 2nd.">
         </div>
 
         <!-- Album Title and Link -->
         <div class="album-info">
             <h1>FREAK!</h1>
-            <p>coming December 2nd</p>
+            <p>Coming December 2nd</p>
         </div>
+
+        <!-- Stripe Payment Button -->
+        <button id="checkout-button">Pay $10</button>
     </div>
- <title>Stripe Payment</title>
-    <script src="https://js.stripe.com/v3/"></script>
-</head>
-<body>
-    <button id="checkout-button">Pay $10</button>
 
     <!-- Link to your JavaScript file -->
     <script src="stripe.js"></script>
