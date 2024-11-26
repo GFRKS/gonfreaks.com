@@ -1,10 +1,13 @@
 /* Add custom font */
 @font-face {
     font-family: 'Trashhand';
-    src: url('fonts/Trashhand.ttf') format('truetype'); /* Reference the .ttf file */
+    src: url('fonts/Trashhand.woff2') format('woff2'),
+         url('fonts/Trashhand.woff') format('woff'),
+         url('fonts/Trashhand.ttf') format('truetype'); /* Fallback to TTF */
     font-weight: normal;
     font-style: normal;
 }
+
 
 /* Basic reset */
 * {
