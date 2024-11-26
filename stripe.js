@@ -5,7 +5,7 @@ const stripe = Stripe('pk_live_51QPCmd008vQHUmH0tCs6YwzAgWFDutdhhL78AY6pxWUzNrIr
 document.getElementById('checkout-button').addEventListener('click', async () => {
     try {
         // Call your backend to create a checkout session
-        const response = await fetch('https://your-backend-url/create-checkout-session', {
+        const response = await fetch('https://gonfreaks-p8peghki6-gfrks-projects.vercel.app', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
         });
