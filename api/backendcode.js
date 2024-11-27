@@ -28,7 +28,7 @@ module.exports = async (req, res) => {
           },
         ],
         mode: 'payment',
-        success_url: 'https://gonfreaks.com/success',
+        success_url: 'https://drive.google.com/drive/folders/1YfnrcbauY8CotQ9WE41Hngpp9I9B4vfJ?usp=share_link',
         cancel_url: 'https://gonfreaks.com/',
       });
 
