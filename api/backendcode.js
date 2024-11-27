@@ -29,7 +29,7 @@ module.exports = async (req, res) => {
         ],
         mode: 'payment',
         success_url: 'https://gonfreaks.com/success',
-        cancel_url: 'https://gonfreaks.com/cancel',
+        cancel_url: 'https://gonfreaks.com/',
       });
 
       res.status(200).json({ id: session.id });
